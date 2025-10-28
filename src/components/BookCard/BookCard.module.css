@@ -1,0 +1,132 @@
+/* BookCard.module.css */
+.bookCard {
+  background: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.bookCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+.coverContainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.bookCard:hover .cover {
+  transform: scale(1.05);
+}
+
+/* subtle accent bar */
+.coverContainer::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
+.content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.author {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  font-style: italic;
+}
+
+.year,
+.publisher,
+.language {
+  color: #374151;
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.subjects,
+.isbn {
+  margin-top: auto;
+  padding-top: 0.8rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  border-top: 1px solid #eef2f7;
+}
+
+.subjects strong,
+.isbn strong {
+  color: var(--text-primary);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .bookCard {
+    flex-direction: row;
+    height: auto;
+  }
+  
+  .coverContainer {
+    width: 120px;
+    height: 160px;
+    flex-shrink: 0;
+  }
+  
+  .content {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bookCard {
+    flex-direction: column;
+  }
+  
+  .coverContainer {
+    width: 100%;
+    height: 150px;
+  }
+  
+  .content {
+    padding: 1rem;
+  }
+}

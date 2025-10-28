@@ -1,0 +1,41 @@
+/* ErrorMessage.module.css */
+.errorContainer {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #ff6b6b;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.2);
+}
+
+.errorIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.errorMessage {
+  color: #d63031;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .errorContainer {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .errorIcon {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .errorMessage {
+    font-size: 0.9rem;
+  }
+}

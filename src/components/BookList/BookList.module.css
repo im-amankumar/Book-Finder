@@ -1,0 +1,50 @@
+/* BookList.module.css */
+.bookList {
+  margin-top: 2rem;
+}
+
+.resultsHeader {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+.resultsHeader::after {
+  content: '';
+  display: block;
+  width: 90px;
+  height: 3px;
+  margin: 10px auto 0;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  border-radius: 999px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .resultsHeader {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+}
