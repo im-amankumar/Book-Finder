@@ -92,29 +92,6 @@ The app uses the Open Library Search API:
 - **Error Handling**: Network error detection and user-friendly messages
 - **Data Display**: Rich book information including covers, metadata, and subjects
 
-## 🎨 Design Features
-
-- **Modern Gradient Background**: Beautiful purple-blue gradient
-- **Glass Morphism**: Semi-transparent header with backdrop blur
-- **Smooth Animations**: Hover effects and loading spinners
-- **Card-based Layout**: Clean, organized book display
-- **Typography**: Clean, readable fonts with proper hierarchy
-
-## 🚀 Deployment
-
-### CodeSandbox Deployment
-
-1. Go to [CodeSandbox](https://codesandbox.io)
-2. Create a new React sandbox
-3. Copy and paste the project files
-4. The app will automatically build and deploy
-
-### Other Deployment Options
-
-- **Vercel**: Connect your GitHub repository for automatic deployments
-- **Netlify**: Drag and drop the build folder for instant deployment
-- **GitHub Pages**: Use GitHub Actions for automated deployment
-
 ## 🧪 Testing
 
 The application includes:
@@ -122,29 +99,6 @@ The application includes:
 - **Loading States**: User feedback during API calls
 - **Input Validation**: Prevents empty searches
 - **Responsive Testing**: Works across all device sizes
-
-## 📝 Future Enhancements
-
-Potential features for future development:
-- Search by author or ISBN
-- Book details modal/page
-- Favorites/bookmark functionality
-- Search history
-- Advanced filters (year, language, etc.)
-- Dark mode toggle
-- Book recommendations
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🙏 Acknowledgments
 
